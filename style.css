@@ -1,26 +1,4 @@
 /* ==========================================================================
-   Johnny Kwok · Portfolio — Main stylesheet
-   ==========================================================================
-   Sections:
-   1. Variables & Reset
-   2. Media protection (images/video)
-   3. Animations
-   4. Base & Typography
-   5. Navbar
-   6. Buttons
-   7. Sections & About
-   8. Work / Portfolio
-   9. Contact
-  10. Footer
-  11. Hamburger (mobile)
-  12. Page: Photography & Graphic Design (masonry, filters, back link)
-  13. Page: Video gallery (tabs, reels, YouTube)
-  14. Page: CV
-  15. Swiss design (hero & info bar)
-  16. Responsive
-   ========================================================================== */
-
-/* ==========================================================================
    1. Variables & Reset
    ========================================================================== */
 
@@ -38,14 +16,11 @@
     --text-muted: #5c5c5c;
     --border: #e8e8e8;
     --accent: #1a1a1a;
-    /* Swiss / hero variant */
     --swiss-bg: #ececec;
     --swiss-black: #111111;
     --swiss-border: #999999;
-    /* Typography */
     --font-sans: 'DM Sans', system-ui, sans-serif;
     --font-serif: 'DM Serif Display', Georgia, serif;
-    /* Shadows */
     --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.04);
     --shadow-2: 0 4px 12px rgba(0, 0, 0, 0.06);
     --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -77,8 +52,7 @@ video {
     position: absolute;
     inset: 0;
     z-index: 1;
-    cursor: pointer; /* parent is often a link */
-    /* receives right-click (empty div); left-click forwarded to parent link in JS */
+    cursor: pointer;
 }
 
 /* ==========================================================================
@@ -152,7 +126,6 @@ h3 { font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; marg
     align-items: center;
 }
 
-/* Hamburger: always hidden on desktop (overrides .container > * which would show it) */
 .navbar .container > .hamburger {
     display: none !important;
 }
@@ -518,10 +491,9 @@ a.mosaic-item {
     height: 2px;
     background: var(--text);
     transition: transform 0.25s ease, opacity 0.25s ease;
-    pointer-events: none; /* clicks pass through to button so toggle always works */
+    pointer-events: none; 
 }
 
-/* When menu is open: hamburger turns into X */
 .hamburger.is-open .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -541,7 +513,6 @@ a.mosaic-item {
     margin-bottom: 2.25rem;
 }
 
-/* Back button: consistent, decent look on CV, Photography, Video pages */
 .back-link {
     display: inline-flex;
     align-items: center;
@@ -596,7 +567,6 @@ a.mosaic-item {
     border-color: var(--accent);
 }
 
-/* Photography & Graphic Design: shared masonry layout (CSS columns) */
 .page-photography .masonry-gallery,
 .page-graphic-design .masonry-gallery {
     column-count: 4;
@@ -646,7 +616,6 @@ a.mosaic-item {
 .video-entry .video-wrap { display: inline-block; max-width: 100%; border-radius: var(--radius-sm); overflow: hidden; }
 .video-entry video { display: block; width: auto; height: auto; max-width: 100%; }
 
-/* Video tab switcher: hide inactive panels, show active */
 .video-tab-content {
     display: none;
     padding-bottom: 4rem;
@@ -655,7 +624,6 @@ a.mosaic-item {
     display: block;
 }
 
-/* video-wrap: consistent spacing and border-radius for all embeds */
 .video-wrap {
     border-radius: var(--radius-sm);
     overflow: hidden;
@@ -667,7 +635,6 @@ a.mosaic-item {
     border: 0;
 }
 
-/* IG Reels: grid sized to fit Instagram embed, no cropping */
 .ig-reels-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -681,7 +648,6 @@ a.mosaic-item {
 }
 .video-wrap--reel {
     width: 100%;
-    /* Slightly taller than 9:16 so embed caption/UI isn’t cropped */
     aspect-ratio: 9 / 18;
     background: #000;
 }
@@ -717,7 +683,6 @@ a.mosaic-item {
     font-weight: 500;
 }
 
-/* YouTube: 16:9 horizontal grid */
 .youtube-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
@@ -963,7 +928,6 @@ a.mosaic-item {
   16. Responsive
    ========================================================================== */
 
-/* Desktop: keep hamburger hidden so only nav links show */
 @media (min-width: 769px) {
     .navbar .container > .hamburger,
     .hamburger {
