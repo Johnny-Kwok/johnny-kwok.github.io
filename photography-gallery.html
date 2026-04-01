@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography · Johnny Kwok</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-photography">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/Johnny.png" class="logo-image" alt="Johnny">
+            </a>
+            <button type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Work</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="nav-btn-container">
+                    <a href="cv.html" class="nav-view-cv">View CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container page-header">
+        <a href="index.html" class="back-link">← Back</a>
+        <h1 class="animate-in">Photography</h1>
+    </div>
+
+    <div class="container">
+        <div class="photo-filters">
+            <button type="button" class="btn-filter active" data-category="all">All</button>
+            <button type="button" class="btn-filter" data-category="commercial">Commercial</button>
+            <button type="button" class="btn-filter" data-category="portrait">Portrait</button>
+            <button type="button" class="btn-filter" data-category="life">Life</button>
+        </div>
+        <div class="masonry-gallery photo-gallery-grid">
+            <div class="mosaic-item animate-item" data-category="commercial">
+                <span class="media-protect">
+                    <img src="assets/photo/Commercial/PIC08115.JPG" alt="Jewellery_001" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="commercial">
+                <span class="media-protect">
+                    <img src="assets/photo/Commercial/PIC08123.JPG" alt="Jewellery_002" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="commercial">
+                <span class="media-protect">
+                    <img src="assets/photo/Commercial/PIC08125.JPG" alt="Jewellery_003" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>                        
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 1.JPG" alt="Portrait 1" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 2.jpg" alt="Portrait 2" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 3.jpg" alt="Portrait 3" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 4.jpg" alt="Portrait 4" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 5.jpg" alt="Portrait 5" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 6.jpg" alt="Portrait 6" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="portrait">
+                <span class="media-protect">
+                    <img src="assets/photo/Portrait/portrait 7.jpg" alt="Portrait 7" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="life">
+                <span class="media-protect">
+                    <img src="assets/photo/Life/Camping.jpg" alt="Camping" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+            <div class="mosaic-item animate-item" data-category="life">
+                <span class="media-protect">
+                    <img src="assets/photo/Life/Fushimi-Inari Taisha.jpeg" alt="Fushimi Inari Taisha" draggable="false">
+                    <span class="media-protect__overlay" aria-hidden="true"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Johnny Kwok</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
