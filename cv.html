@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV · Johnny Kwok</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cv.css">
 </head>
 <body class="page-cv">
     <nav class="navbar">
@@ -27,54 +28,113 @@
         </div>
     </nav>
 
-    <div class="container">
-        <a href="index.html" class="back-link">← Back</a>
-        <div class="cv-page">
-            <h1>Johnny Kwok</h1>
-            <p class="subtitle">Photography · Video · Graphic Design · Web Design · AI · Social Media Management · Digital Marketing · Content Creation · Content Strategy · Content Planning · Content Execution · Content Analytics</p>
+    <div class="cover-image"></div>
 
-            <section class="cv-section">
-                <h2>Experience</h2>
-                <div class="cv-item">
-                    <div class="cv-item-title">Social Media Specialist</div>
-                    <div class="cv-item-meta"><I>Silverback Education Center</I></div>
-                    <div class="cv-item-desc">Add your education here.</div>
-                </div>
-            </section>
+    <div class="page-container">
+        <header class="page-header">
+            <div class="icon">📷</div>
+            <h1 class="page-title">Johnny Kwok</h1>
+            <p class="cv-intro">Digital Marketing Specialist / Contenet Creator</p>
+        </header>
 
-            <section class="cv-section">
-                <h2>Education</h2>
-                <div class="cv-item">
-                    <div class="cv-item-title">Media and Social Communication</div>
-                    <div class="cv-item-meta"><I>Hong Kong Baptist University</I></div>
-                    <div class="cv-item-desc">Add your experience here.</div>
+        <div class="content-grid">
+            <aside class="sidebar">
+                <img src="assets/Johnny.png" alt="Johnny Kwok" class="profile-pic">
+                
+                <div class="sidebar-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>📱 +852 5328 0040</li>
+                        <li>✉️ kwokwaishing13@gmail.com</li>
+                        <li>🔗 <a href="https://johnny-kwok.github.io/index.html" target="_blank">Website</a></li>
+                    </ul>
                 </div>
-            </section>
 
-            <section class="cv-section">
-                <h2>Skills</h2>
-                <div class="cv-skills">
-                    <span>Photography</span>
-                    <span>Videography</span>
-                    <span>Graphic Design</span>
-                    <span>Web Design</span>
-                    <span>Web Building</span>
-                    <span>AI</span>
-                    <span>Social Media Management</span>
-                    <span>Digital Marketing</span>
-                    <span>Content Creation</span>
-                    <span>Content Strategy</span>
-                    <span>Content Planning</span>
-                    <span>Content Execution</span>
-                    <span>Content Promotion</span>
-                    <span>Content Analytics</span>
+                <div class="sidebar-section">
+                    <h3>Interests</h3>
+                    <div class="tag-list">
+                        <span class="tag">📸 Photography</span>
+                        <span class="tag">🎬 Video Editing</span>
+                        <span class="tag">🎨 Design</span>
+                    </div>
                 </div>
-            </section>
+            </aside>
+
+            <main class="main-content">
+                <section class="resume-section">
+                    <h2>Experience</h2>
+                    <div class="timeline-item">
+                        <div class="company-logo">
+                            <img src="assets/Silverback Logo.png" alt="Silverback">
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Social Media Specialist</h4>
+                            <p class="date">Silverback Consulting LTD | Feb 2024 - Present</p>
+                            <p><span style="font-size: 13px !important;">- Managed social media accounts, including Instagram, Facebook, and Xiaohongshu</span></p>
+                            <p><span style="font-size: 13px !important;">- Developed and implemented social media strategies to increase brand awareness and engagement</span></p>
+                            <p><span style="font-size: 13px !important;">- Collaborated with vendors to create and publish engaging content, including social media ads</span></p>
+                            <p><span style="font-size: 13px !important;">- Analyzed social media metrics to measure the effectiveness of social media campaigns and made recommendations for improvement</span></p>
+                            <p><span style="font-size: 13px !important;">- Grew the brand's social media presence from 12k to 36k followers within 2 years (+200%). Achieved an average of 243k+ monthly views on social media platforms in the last 7 months.</span></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="company-logo">
+                            <img src="assets/Madison Logo.png" alt="Madison">
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Public Relations Specialist</h4>
+                            <p class="date">Madison Communications Limited | Jul 2022 - Aug 2022</p>
+                            <p><span style="font-size: 13px !important;">- Did research work on IT, marine and healthcare policy and tracking of stakeholders</span></p>
+                            <p><span style="font-size: 13px !important;">- Planned and created a series of social media posts along with accompanying graphics and constructed webiste</span></p>
+                            <p><span style="font-size: 13px !important;">- Brainstormed ideas for a promotional video for a NGO</span></p>
+                            <p><span style="font-size: 13px !important;">- Designed a T-shirt for a charity event</span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="resume-section">
+                    <h2>Education</h2>
+                    <div class="timeline-item">
+                        <div class="education-logo">
+                            <img src="assets/HKBU Logo.png" alt="HKBU">
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Media and Social Communication</h4>
+                            <p class="date">Hong Kong Baptist University</p>
+                            <p><span style="font-size: 13px !important;">- Developed a strong foundation in media, understanding of media communication process in the context of changing society and media environment</span></p>
+                            <p><span style="font-size: 13px !important;">- Gained extensive training and successfully accomplished all courses for advertising desgin, film production, etc.</span></p>
+                            <p><span style="font-size: 13px !important;">- Specialized in digital media trends and communication strategies</span></p>
+                            <p><span style="font-size: 13px !important;">- Specialized in digital media trends and communication strategies</span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="resume-section">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h4>🎨 Graphic Design</h4>
+                            <span class="tag tag-gray">Photoshop / Illustrator / Figma / Canva</span>
+                        </div>
+                        <div class="skill-card">
+                            <h4>📱 Social Media</h4>
+                            <span class="tag tag-gray">Strategy / Management</span>
+                        </div>
+                        <div class="skill-card">
+                            <h4>📸 Photography</h4>
+                            <span class="tag tag-gray">Portrait / Landscape / Wildlife / Documentary / Product</span>
+                        </div>
+                        <div class="skill-card">
+                            <h4>🎬 Editing</h4>
+                            <span class="tag tag-gray">Adobe After Effects / Adobe Premiere Pro / Davinci Resolve / CapCut</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
     </div>
-</div>
 
-    <footer class="footer footer-spaced">
+    <footer class="footer">
         <div class="container">
             <p>© 2026 Johnny Kwok</p>
         </div>
