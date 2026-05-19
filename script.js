@@ -75,15 +75,28 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.animate-in, .animate-item').forEach(el => observer.observe(el));
 
     /* ----------------------------------------------------------------------
-       4. 影片預覽 (Video Previews - Home Page)
+       4. 影片預覽 (Video Previews - YouTube AutoPlay on Scroll)
        ---------------------------------------------------------------------- */
-    document.querySelectorAll('.video-preview-card video').forEach(v => {
-        v.addEventListener('mouseenter', () => v.play());
-        v.addEventListener('mouseleave', () => {
-            v.pause();
-            v.currentTime = 0;
-        });
-    });
+       const videoFrames = document.querySelectorAll('.video-wrap iframe');
+
+       const videoObserver = new IntersectionObserver((entries) => {
+           entries.forEach(entry => {
+               const iframe = entry.target;
+   
+               if (entry.isIntersecting) {
+                   if (!src.includes('autoplay=1')) {
+                       iframe.src = src.replace('autoplay=0', 'autoplay=1').replace('autoplay=', 'autoplay=1');
+                   }
+               } else {
+                   if (src.includes('autoplay=1')) {
+                       iframe.src = src.replace('autoplay=1', 'autoplay=0');
+                   }
+               }
+           });
+       }, {threshold: 0.5 });
+   
+       videoFrames.forEach(frame => observer.observe(frame));
+    
 
     /* ----------------------------------------------------------------------
        5. 聯絡表單 (Contact Form)
